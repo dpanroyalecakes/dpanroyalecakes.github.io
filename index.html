@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'pan Royale Cakes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FDFBF7; 
+            --text-color: #4A3B32; 
+            --accent-color: #D4A373; 
+            --button-bg: #FFFFFF;
+            --button-hover: #F3E5D8;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(212, 163, 115, 0.25);
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: #7A6A5E;
+            margin-top: 5px;
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title::after, .section-title::before {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid rgba(212, 163, 115, 0.3);
+            margin: 0 10px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--button-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 30px;
+            border: 1px solid var(--accent-color);
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            position: relative;
+        }
+
+        .link-btn:hover {
+            background-color: var(--button-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(212, 163, 115, 0.3);
+        }
+        
+        .icon {
+            position: absolute;
+            left: 20px;
+            font-size: 18px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #A09388;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Ganti URL ini dengan link logo yang sudah di-upload -->
+        <img src="https://via.placeholder.com/150/D4A373/FFFFFF?text=Logo" alt="D'pan Royale Cakes" class="profile-img">
+        
+        <h1 class="brand-name">D'pan Royale Cakes</h1>
+        <p class="tagline">Tradisi Rasa, Dari Bogor untuk Semua</p>
+
+        <!-- Kategori: Pemesanan -->
+        <div class="section-title">Pesan Sekarang</div>
+        <div class="link-container">
+            <a href="https://wa.me/6282312012088" class="link-btn" target="_blank"><span class="icon">📱</span> WhatsApp (Admin)</a>
+            <a href="https://gofood.link/a/UUkSkLU" class="link-btn" target="_blank"><span class="icon">🛵</span> GoFood</a>
+            <a href="https://app.grab.com/s/wug5ilwd" class="link-btn" target="_blank"><span class="icon">🟢</span> GrabFood</a>
+            <a href="https://shopee.co.id/universal-link/now-food/shop/23974030?deep_and_deferred=1&shareChannel=copy_link" class="link-btn" target="_blank"><span class="icon">🛒</span> ShopeeFood</a>
+        </div>
+
+        <!-- Kategori: Informasi -->
+        <div class="section-title">Informasi</div>
+        <div class="link-container">
+            <a href="#" class="link-btn" target="_blank"><span class="icon">📖</span> Daftar Menu Lengkap</a>
+            <a href="#" class="link-btn" target="_blank"><span class="icon">⭐</span> Testimoni Pelanggan</a>
+            <a href="https://www.instagram.com/dpanroyalecakes/" class="link-btn" target="_blank"><span class="icon">📸</span> Galeri Instagram</a>
+        </div>
+
+        <div class="footer">
+            <p>Managed by Vocallure</p>
+        </div>
+    </div>
+
+</body>
+</html>
